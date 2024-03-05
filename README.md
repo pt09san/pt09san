@@ -1,6 +1,4 @@
-- 👋 Hi, I’m @pt09san
-- 👀 I’m interested in Java...
-- 🌱 I’m currently learning Java & Python...
+- 👋 Hi
 
 
 <!---
