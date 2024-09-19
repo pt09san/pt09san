@@ -1,12 +1,72 @@
-<h3 align="center">Web Developer | Building Dynamic, Responsive Applications </h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandro's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.2/tailwind.min.css"> <!-- Link to Tailwind CSS CDN -->
+  <style>
+    .bg-primary {
+      background-color: #1D4ED8; /* Tailwind Blue 700 */
+    }
+    .bg-secondary {
+      background-color: #4B5563; /* Tailwind Gray 700 */
+    }
+    .text-primary {
+      color: #1D4ED8; /* Tailwind Blue 700 */
+    }
+    .text-accent {
+      color: #F59E0B; /* Tailwind Yellow 500 */
+    }
+    .custom-heading {
+      border-bottom: 2px solid #1D4ED8; /* Tailwind Blue 700 */
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    .card-shadow {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
 
-- 🌱 I’m currently learning **React**
+  <!-- Header -->
+  <header class="bg-primary text-white p-6">
+    <h1 class="text-4xl font-bold text-center">Sandro Abreu</h1>
+    <p class="text-center text-lg mt-2">Web Developer | Full Stack Developer</p>
+  </header>
 
+  <!-- About Me Section -->
+  <section id="about" class="p-8 text-center">
+    <h2 class="text-3xl font-semibold mb-4 custom-heading">About Me</h2>
+    <p class="max-w-3xl mx-auto text-lg">I am a web developer specializing in building dynamic and responsive web applications. I use modern tools like ASP.NET Core MVC, Tailwind CSS, JavaScript, and MySQL to deliver clean and efficient code.</p>
+  </section>
 
-<p align="left">
-</p>
+  <!-- Projects Section -->
+  <section id="projects" class="p-8 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Project Card -->
+      <div class="bg-white p-6 rounded-lg shadow-lg card-shadow">
+        <h3 class="text-xl font-bold">E-Commerce Website</h3>
+        <p class="mt-2">Developed an e-commerce platform using ASP.NET Core MVC and MySQL.</p>
+        <a href="#" class="text-primary mt-4 inline-block hover:underline">View Project</a>
+      </div>
+      <!-- Repeat for more projects -->
+    </div>
+  </section>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.framer.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/framer/framer-icon.svg" alt="framer" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+  <!-- Contact Section -->
+  <section id="contact" class="p-8 text-center bg-secondary text-white">
+    <h2 class="text-3xl font-semibold mb-4">Get In Touch</h2>
+    <p class="mb-6">Feel free to reach out to me for any web development opportunities or collaborations.</p>
+    <a href="mailto:pt09san@outlook.com" class="bg-accent text-black py-2 px-6 rounded-full hover:bg-yellow-400">Email Me</a>
+  </section>
 
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center p-4">
+    <p>&copy; 2024 Sandro Abreu</p>
+  </footer>
 
+</body>
+</html>
