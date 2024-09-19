@@ -4,67 +4,157 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sandro's Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.3.2/tailwind.min.css"> <!-- Link to Tailwind CSS CDN -->
+  <link rel="stylesheet" href="./dist/styles.css"> <!-- Link to the generated CSS -->
   <style>
-    .bg-primary {
-      background-color: #1D4ED8; /* Tailwind Blue 700 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6; /* Light gray background */
+      color: #333; /* Dark gray text */
     }
-    .bg-secondary {
-      background-color: #4B5563; /* Tailwind Gray 700 */
+
+    header {
+      background-color: #1d4ed8; /* Blue color */
+      color: white;
+      padding: 2rem;
+      text-align: center;
     }
-    .text-primary {
-      color: #1D4ED8; /* Tailwind Blue 700 */
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
-    .text-accent {
-      color: #F59E0B; /* Tailwind Yellow 500 */
+
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
     }
-    .custom-heading {
-      border-bottom: 2px solid #1D4ED8; /* Tailwind Blue 700 */
+
+    section {
+      padding: 2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #1d4ed8;
       display: inline-block;
       padding-bottom: 0.5rem;
     }
-    .card-shadow {
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .about, .contact {
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.125rem;
+    }
+
+    .projects {
+      background-color: #f9fafb; /* Slightly darker gray */
+    }
+
+    .project-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .project-card p {
+      margin: 0.5rem 0;
+    }
+
+    .project-card a {
+      color: #1d4ed8; /* Blue color */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      background-color: #4b5563; /* Dark gray */
+      color: white;
+    }
+
+    .contact a {
+      background-color: #f59e0b; /* Yellow color */
+      color: black;
+      padding: 0.5rem 1.5rem;
+      border-radius: 9999px; /* Fully rounded */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      background-color: #fbbf24; /* Slightly lighter yellow */
+    }
+
+    footer {
+      background-color: #1d4ed8; /* Blue color */
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .projects {
+        padding: 1rem;
+      }
+
+      .project-card {
+        margin-bottom: 1rem;
+      }
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
   <!-- Header -->
-  <header class="bg-primary text-white p-6">
-    <h1 class="text-4xl font-bold text-center">Sandro Abreu</h1>
-    <p class="text-center text-lg mt-2">Web Developer | Full Stack Developer</p>
+  <header>
+    <h1>Sandro Abreu</h1>
+    <p>Web Developer | Full Stack Developer</p>
   </header>
 
   <!-- About Me Section -->
-  <section id="about" class="p-8 text-center">
-    <h2 class="text-3xl font-semibold mb-4 custom-heading">About Me</h2>
-    <p class="max-w-3xl mx-auto text-lg">I am a web developer specializing in building dynamic and responsive web applications. I use modern tools like ASP.NET Core MVC, Tailwind CSS, JavaScript, and MySQL to deliver clean and efficient code.</p>
+  <section class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I am a web developer specializing in building dynamic and responsive web applications. I use modern tools like ASP.NET Core MVC, Tailwind CSS, JavaScript, and MySQL to deliver clean and efficient code.</p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="p-8 bg-gray-100">
-    <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Project Card -->
-      <div class="bg-white p-6 rounded-lg shadow-lg card-shadow">
-        <h3 class="text-xl font-bold">E-Commerce Website</h3>
-        <p class="mt-2">Developed an e-commerce platform using ASP.NET Core MVC and MySQL.</p>
-        <a href="#" class="text-primary mt-4 inline-block hover:underline">View Project</a>
-      </div>
-      <!-- Repeat for more projects -->
+  <section class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-card">
+      <h3>E-Commerce Website</h3>
+      <p>Developed an e-commerce platform using ASP.NET Core MVC and MySQL.</p>
+      <a href="#">View Project</a>
     </div>
+    <!-- Repeat for more projects -->
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="p-8 text-center bg-secondary text-white">
-    <h2 class="text-3xl font-semibold mb-4">Get In Touch</h2>
-    <p class="mb-6">Feel free to reach out to me for any web development opportunities or collaborations.</p>
-    <a href="mailto:pt09san@outlook.com" class="bg-accent text-black py-2 px-6 rounded-full hover:bg-yellow-400">Email Me</a>
+  <section class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p>Feel free to reach out to me for any web development opportunities or collaborations.</p>
+    <a href="mailto:pt09san@outlook.com">Email Me</a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-primary text-white text-center p-4">
+  <footer>
     <p>&copy; 2024 Sandro Abreu</p>
   </footer>
 
