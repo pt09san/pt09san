@@ -1,4 +1,4 @@
-<h3 align="center">Web Developer | Building Dynamic, Responsive Applications with Modern Tools like ASP.NET Core, Tailwind CSS, and JavaScript</h3>
+<h3 align="center">Web Developer | Building Dynamic, Responsive Applications </h3>
 
 - 🌱 I’m currently learning **React**
 
