@@ -1,4 +1,6 @@
-<h3 align="center">Graduate Software Developer </h3>
+<h3>💻 Graduate Software Developer</h3>
+
+👋 About Me 
 
 I’m currently learning React Native
 
